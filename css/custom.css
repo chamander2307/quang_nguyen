@@ -2,7 +2,9 @@
     list-style: decimal;
     list-style-position: inside;
 }
-
+.list-cirle li{
+list-style: circle;
+}
 .okbro {
     animation-delay: 0.45s;
     animation: okebro 2s ease-out forwards;
