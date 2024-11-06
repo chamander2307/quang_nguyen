@@ -163,9 +163,9 @@
                         What sets me apart as a business analyst is my ability to bridge technical expertise with a strong sense of business acumen. My proficiency in tools like SQL, Excel, Tableau, or Python allows me to translate raw data into meaningful insights. Alongside my technical skills, I bring strong communication abilities, adaptability, and a collaborative mindset, enabling me to convey complex insights in a clear and engaging way. My goal is always to ensure that data not only informs but also drives impactful business decisions.
                     <div class="grid-list-items s-about__blocks">
 
-                        <div class="grid-list-items__item s-about__block">
+                        <div class="grid-list-items__item s-about__block ">
                             <h4 class="s-about__block-title nahbro">Experience</h4>
-                            <ul class="s-about__list nahbro">
+                            <ul class="s-about__list nahbro" style="background-color: rgb(255, 247, 240);">
                                 <li>
                                     Eastern International University
                                     <span>Transitioned into business analytics with a focus on data-driven decision-making.</span>
@@ -188,7 +188,7 @@
 
                         <div class="grid-list-items__item s-about__block">
                             <h4 class="s-about__block-title nahbro">Awards</h4>
-                            <ul class=" s-about__list nahbro">
+                            <ul class=" s-about__list nahbro " style="background-color: rgb(255, 247, 240);">
                                 <li>
                                     Vietnam National Student Scientific Research Award
                                     <span>project titled "Using Data Analytics to Improve Supply Chain Efficiency.</span>
@@ -208,7 +208,7 @@
                         <div class="grid-list-items__item s-about__block">
                             <h4 class="s-about__block-title">Skills</h4>
 
-                            <ul class="s-about__list nahbro">
+                            <ul class="s-about__list nahbro" style="background-color: rgb(255, 247, 240);">
                                 <li>
                                     Technical Skills
                                     <span>SQL</span>
@@ -246,26 +246,27 @@
 
             <div class="row">
                 <div class="column xl-12">
-                    <div class="section-header" data-num="02">
+                    <div class="section-header nahbro" data-num="02">
                         <h2 class="text-display-title">PROJECT SECTION</h2>
                     </div> <!-- end section-header -->
+                    <img src="images/Bieudo.webp" srcset="images/bieudo.webp 1x, images/bieudo.webp 2x" alt="" class="nahbro"> 
                     <p class="attention-getter nahbro">
-                        <h3>Renewable Energy Forecasting System </h3></p class="attention-getter">
-                        <p class="section-footer__about nahbro"><h4>why now?</h4><br> The renewable energy sector is expanding rapidly, driven by the global shift towards sustainability. However, the inherent variability in energy production from solar and wind sources presents significant challenges for grid reliability and operational efficiency. <br><br>Our Renewable Energy Forecasting System leverages the proven SOAR (Specify, Obtain, Analyze, Report) Analytics Model to deliver highly accurate energy production forecasts, helping energy providers and grid operators make smarter, data-driven decisions.
-                        </p>
+                        <h3>Customer Review Sentiment Analysis</h3></p class="attention-getter">
                         <ul class="list-number s-about__list nahbro">
                             <h4>I.Specify the Question</h4>
                             <li>
-                                Advanced Data Analysis: The Problem is "How can we accurately forecast renewable energy production to mitigate variability and enhance grid stability?"</p>
+                                Objective: Understand customer sentiment trends over time through online reviews to identify patterns and areas of improvement in customer experience.
                             </li>
                             <li>
-                                Core Questions:
+                                Keys Questions:
                                 <ul class="list-circle">
-                                    <li>What are the anticipated energy outputs from renewable sources (solar, wind) over short and long-term periods?</li>
-                                    <li>How can predictive insights improve operational efficiency and reduce costs?
+                                    <li>How does the volume of customer reviews change over time?
                                     </li>
-                                    <li>How do weather and other external factors impact energy production, and how can we account for them in our forecasts?
+                                    <li>What is the sentiment distribution (positive, negative, neutral) across verified and unverified reviews?
                                     </li>
+                                    <li>Are there significant trends or seasonal patterns in customer reviews?
+                                    </li>
+                                    <li>How does the sentiment in verified reviews compare with unverified reviews?</li>
                                 </ul>
                             </li>
                         </ul>
@@ -274,71 +275,101 @@
                         </h4>
                         <ul class="list-number s-about__list nahbro">
                             <li>
-                                Data-Driven Precision
+                                Data-source:
+                                <ul class="list-circle"><li>Gather data from an e-commerce or review platform, including historical review data from verified and unverified customers.</li></ul>
+                                </li>
+                            <li>Data Fields:
                                 <ul class="list-circle">
-                                    <li>Weather Data: Real-time and historical data, including temperature, wind speed, solar radiation, and cloud cover.</li>
-                                    <li>Energy Production Data: Continuous monitoring of energy outputs from solar panels and wind turbines.
+                                    <li>Review Date: The date when the review was posted.
                                     </li>
-                                    <li>Geographic and Seasonal Data: Location-based data to capture site-specific and seasonal patterns affecting energy production.
+                                    <li>Review Text: The content of the review, which will be analyzed for sentiment.
+                                    </li>
+                                    <li>Sentiment Score: Pre-calculated score or label (positive, negative, or neutral) using a sentiment analysis model.
                                     </li>
                                 </ul>
                             </li>
-                            <li>Data sources:
+                            <li>Data Collection Method:
                                 <ul class="list-circle">
-                                    <Li>Partnerships with meteorological services for weather data.
-                                    </Li>
-                                    <li>Partnerships with meteorological services for weather data.
-                                    </li>
-                                    <li>Public datasets and proprietary data for comprehensive historical analysis.
-                                    </li>
+                                    <Li>Use APIs from platforms like Amazon, Yelp, or Google Reviews to obtain customer review data. Alternatively, use web scraping methods if an API is unavailable. If sentiment scores aren’t available, use a pre-trained sentiment analysis model to label each review.</Li>
                                 </ul>
                             </li>
                             </ul>
                         <p class=" attention-getter nahbro"><h4>Analyze the Data</h4>
                          <ul class="s-about__list nahbro list-number">
                             <li>
-                                Cutting-Edge Analytics:
+                                Preprocessing:
                                 <ul class="list-circle">
-                                    <li>Machine Learning Models: Utilizing advanced algorithms like time series forecasting, regression models, and ensemble methods for accurate predictions.
-                                    </li>
-                                    <li>Deep Learning Techniques: LSTM (Long Short-Term Memory) networks to handle sequential data and improve forecasting accuracy over time.
-                                    </li>
-                                    <li>Feature Engineering: Developing features that capture the influence of weather, time of day, and seasonal trends on energy production.
-                                    </li>
+                                    <li>Clean the review text by removing stop words, punctuation, and perform tokenization.</li>
                                 </ul>
                             </li>
-                            <li>Validation and Accuracy:
+                            <li>Sentiment Analysis:
 
                                 <ul class=" list-circle">
-                                    <li>Rigorous model validation using industry-standard metrics such as MAE (Mean Absolute Error) and RMSE (Root Mean Squared Error).
+                                    <li>Use Natural Language Processing (NLP) to analyze the sentiment in each review. Models like VADER (for general text sentiment) or a fine-tuned BERT model can classify sentiments.
                                     </li>
-                                    <li>Continuous learning and adaptation through iterative feedback loops, enhancing prediction accuracy over time.
+                                    <li>Label each review as positive, negative, or neutral based on sentiment scores.
                                     </li>
                                 </ul>
+                                <li>Data Aggregation:
+                                    <ul class="list-circle"><li>Group reviews by date, type (verified or unverified), and sentiment category to calculate the number of reviews per category over time.
+                                    </li>
+                                    <li>
+                                        Calculate monthly or quarterly aggregates to identify trends and patterns.  
+                                    </li>
+                                </ul>
+                                </li>
+                                <li>Visualization:
+                                    <ul class="list-circle"><li>
+                                        Time Series Plot: Display the number of verified and unverified reviews over time (similar to the image provided) to see growth and decline.
+
+                                    </li>
+                                    <li>
+                                        Sentiment Distribution: Plot the sentiment breakdown (positive, negative, neutral) over time to understand how customer satisfaction has changed.
+                                    </li>
+                                    <li>
+                                        Comparison Chart: Show sentiment differences between verified and unverified reviews to gauge authenticity and reliability.
+                                    </li>
+                                </ul>
+                                </li>
                             </li>
                         </ul></p>
                         <h3>Results</h3>
                         <ul class="s-about__list list-number nahbro">
-                            <li>Actionable Insights:
+                            <li>Summary of Findings:
                                 <ul class="list-circle">
-                                    <li>User-Friendly Dashboards: Visual tools that present forecasts in a clear, actionable format, helping stakeholders quickly interpret and act on the data.
+                                    <li>Present insights on customer review trends and sentiment over the specified period. For instance, note any peak times or seasonal spikes in review volume (e.g., holiday season).
                                     </li>
-                                    <li>Comprehensive Reports: Detailed analyses that highlight trends, anomalies, and predictive insights for strategic decision-making.
+                                    <li>Highlight the sentiment trends in verified reviews versus unverified reviews.
                                     </li>
                                     <li>
-                                        Real-Time Updates: Continuous forecast updates, ensuring timely and informed decisions in dynamic energy markets.
+                                        Identify any significant shifts in sentiment that correlate with external events (such as product launches or policy changes).
+
                                     </li>
                                 </ul>
                             <li>
-                                Impact:
+                                Key Observations:
                                 <ul class="list-circle">
-                                    <li>Enhanced operational efficiency by optimizing energy distribution and storage.
+                                    <li>Report on whether verified reviews tend to be more positive or negative than unverified reviews, indicating customer trust or product quality perception.
                                     </li>
-                                    <li>Enhanced operational efficiency by optimizing energy distribution and storage.
+                                    <li>Discuss if there's a pattern in sentiment decline or improvement over the years, which could reflect on product quality, service changes, or market sentiment.
                                     </li>
-                                    <li>Significant cost savings by reducing dependency on backup energy sources.
+                                </ul>
+                            </li>
+                            <li>Recommendations:
+                                <ul class="list-circle">
+                                    <li>
+                                        Based on sentiment trends, suggest areas for improvement. For example, if negative sentiment peaks around specific times, investigate potential causes.
                                     </li>
-                                    <li>Support for sustainability goals through better management of renewable resources.
+                                    <li>
+                                        Advise on encouraging more verified reviews if they show a more authentic customer perspective.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Visualizations: 
+                                <ul class="list-circle">
+                                    <li>
+                                        Visualizations: Include graphs and charts that provide a clear, visual summary of findings, allowing stakeholders to quickly grasp trends and insights.
                                     </li>
                                 </ul>
                             </li>
@@ -347,7 +378,7 @@
                     </p>  
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="column xl-12">
             <div class="section-header" data-num="03">
                 <h2 class="text-display-title nahbro">Conclusion</h2>
@@ -358,14 +389,14 @@
                 </p>
                 <b>Join us in revolutionizing the renewable energy landscape—let’s power the future, sustainably and profitably.
                 </b>
-            </p>
+            </p> -->
         </section>
 
         <footer id="footer" class="s-footer target-section">
 
             <div class="row">
                 <div class="column lg-12">
-                    <div class="section-header light-on-dark" data-num="04">
+                    <div class="section-header light-on-dark" data-num="03">
                         <h2 class="text-display-title">Get In Touch.</h2>
                     </div> <!-- end section-header -->
                 </div>
@@ -375,7 +406,7 @@
 
                 <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
                     <p class="attention-getter nahbro">
-                        We’d love to connect with you! Whether you have questions about the Renewable Energy Forecasting System, are interested in partnership opportunities, or want to learn more about our projects, our team is here to help. Please don’t hesitate to reach out.
+                        We’d love to connect with you! Whether you have questions about the Customer Review Sentiment Analysis, are interested in partnership opportunities, or want to learn more about our projects, our team is here to help. Please don’t hesitate to reach out.
                     </p>               
                 </div> <!-- end section-footer__about -->
 
