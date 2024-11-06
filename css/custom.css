@@ -1,4 +1,4 @@
-.list-number li {
+.list-number > li {
     list-style: decimal;
     list-style-position: inside;
 }
